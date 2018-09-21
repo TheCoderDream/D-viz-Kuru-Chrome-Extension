@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="flexboxgrid.min.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Döviz Kuru</title>
+
+</head>
+<body>
+<section class="currency-container" >
+    <header  class="row between-xs marginX marginY">
+        <div >
+            <label class="switch">
+                <input type="checkbox"  id="currencySwitch">
+                <span class="slider round"></span>
+            </label>
+            <div class="inverse">ters çevir</div>
+        </div>
+        <div class="country">
+            <span class="align-super" id="try">1 TRY</span>
+            <img src="./assets/img/try.svg" alt="" class="try_img" height="40px" width="40px">
+        </div>
+        
+    </header>
+    <div class="diveder">
+    </div>
+
+    <section class="currency-body marginX marginY">
+        <div class="row between-sm">
+            <div class="country">
+                <img src="./assets/img/usd.svg" alt="" class="try_img" height="40px" width="40px">
+                <div class="align-super">USD</div>
+                <div id="usd"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>
+            </div>
+            <span class="vertical-divider"></span>
+            <div class="country">
+                <img src="./assets/img/eur.svg" alt="" class="try_img" height="40px" width="40px">
+                <div class="align-super">EUR</div>
+                <div id="eur"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>
+            </div>
+            <span class="vertical-divider"></span>
+            <div class="country">
+                <img src="./assets/img/gbp.svg" alt="" class="try_img" height="40px" width="40px">
+                <div class="align-super">GBP</div>
+                <div id="gbp"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>
+            </div>
+            <span class="vertical-divider"></span>
+            <div class="country">
+                <img src="./assets/img/aud.svg" alt="" class="try_img" height="40px" width="40px">
+                <div class="align-super">AUD</div>
+                <div id="aud"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<script src="./assets/lib/customhttp.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
